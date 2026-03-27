@@ -11,11 +11,22 @@
 
     --Family: [Inter](https://fonts.google.com/specimen/Quicksand);
     --Weights: 400, 600, 700;
+
+    --spacing-10: 10px;
+    --spacing-20: 20px;
+    --spacing-30: 30px;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
 }
 
 /* Definindo a cor de fundo da página */
 body {
     background-color: var(--color-grey-900);
+    font-family: "Inter", sans-serif;
 }
 
 /* Definindo a cor de fundo da div */
@@ -25,6 +36,27 @@ body {
     width: 500px;
     text-align: center;
     border-radius: var(--radius-sm);
+    padding: var(--spacing-20);
+    margin: 50px auto;
+}
+
+.container h1 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-block: var(--spacing-10);
+}
+
+.container h2 {
+    color: var(--color-red);
+    font-size: 26;
+    font-weight: 300;
+    margin-bottom: var(--spacing-20);
+}
+
+.container p {
+    font-size: 13px;
+    font-weight: 200px;
+    margin-bottom: var(--spacing-20);
 }
 
 .container img {
@@ -36,6 +68,29 @@ body {
 .container:hover img {
     border-color: var(--color-red);
     scale: 1.1;
+}
+
+.social {
+    list-style: none;
+}
+
+.social li {
+    background-color: var(--color-grey-700);
+    margin-block: var(--spacing-10);
+    padding: var(--spacing-10);
+    border-radius: var(--radius-sm);
+    transition: .5s;
+}
+
+.social li:hover {
+    background-color: var(--color-red);
+}
+
+.social a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 h2 {
